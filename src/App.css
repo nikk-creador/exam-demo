@@ -1,0 +1,180 @@
+.forgotpass_link {
+  color: #000;
+  text-decoration: none;
+}
+
+.forgotpass_link:hover {
+  color: #959595;
+}
+
+.box-shadow {
+  box-shadow: -20px 20px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-bg {
+  background-color: #efefef;
+}
+
+.sidebar-menu {
+  background-color: #efefef;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.student-card {
+  padding: 0.5rem;
+  margin: 1.4rem;
+}
+
+.exam-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin: 3rem auto 0 0;
+}
+
+.card {
+  width: 60%;
+}
+
+.card-design {
+  border: 3px solid #212121;
+  padding: 1.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.exam-design {
+  margin-bottom: 4rem;
+}
+
+.user-resetpass {
+  min-height: 70vh;
+}
+
+/* dialog box */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* dialog box end */
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.exam-card {
+  min-width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .exam-design {
+    min-width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  .exam-responsive {
+    margin-left: 4.5rem !important;
+  }
+
+  .w-responsive {
+    width: 30%;
+  }
+
+  .w-60 {
+    width: 100%;
+  }
+
+  .w-40 {
+    width: 100%;
+  }
+
+  .landing-page {
+    width: 100%;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .w-responsive {
+    width: 70%;
+    margin: 1rem !important;
+  }
+
+  .landing-page {
+    width: 60%;
+    margin: 3rem;
+  }
+
+  .w-40 {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .w-responsive {
+    width: 30%;
+    margin: 1rem !important;
+  }
+
+  .landing-page {
+    width: 45%;
+  }
+}
